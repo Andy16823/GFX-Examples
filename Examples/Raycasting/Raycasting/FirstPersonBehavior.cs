@@ -19,7 +19,7 @@ namespace Raycasting
     {
         private GameElement _element;
         private Vector2 _lastMousePosition;
-        private float _mouseSensitivity = 0.05f;
+        private float _mouseSensitivity = 0.02f;
 
         public void SetElement(GameElement gameElement)
         {
@@ -120,7 +120,7 @@ namespace Raycasting
                     if (camera != null)
                     {
                         camera.Transform.Position = _element.Transform.Position + new Vector3(0, 1.6f, 0);
-                        camera.Transform.Rotate(-delta.Y * _mouseSensitivity, -delta.X * _mouseSensitivity, 0);
+                        camera.Transform.Rotate(delta.Y * _mouseSensitivity, -delta.X * _mouseSensitivity, 0);
                     }
                 }
             }

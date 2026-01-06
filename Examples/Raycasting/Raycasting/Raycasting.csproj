@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GFX" Version="1.1.2" />
+    <PackageReference Include="GFX" Version="1.1.2.1" />
   </ItemGroup>
 
 </Project>

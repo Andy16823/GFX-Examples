@@ -7,7 +7,8 @@ namespace Raycasting
         static void Main(string[] args)
         {
             MyGame game = new MyGame();
-            game.Run(new GLRenderer());
+            game.TargetFrameRate = 250;
+            game.Run(new GLRenderer(), 800, 600, "Test", false);
         }
     }
 }
